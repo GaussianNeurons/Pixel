@@ -12,3 +12,9 @@ While a generative model is creating thousands of unique NFT’s a smart contrac
 Built with Python, we used two state-of-the-art (SOTA) deep learning models from generative modeling to create new and unique NFTs. Specifically, we used a PyTorch implementation of Deep Convolutional Generative Adversarial Networks (DCGANs) and OpenAI’s GPT-2 text generation model, modified to work with images. DCGANs combine GANs, which are SOTA for generative modeling, and deep convolutional networks, which are SOTA for image classification making them well suited for novel image synthesis. GPT-2 is another SOTA model typically used for automatic speech and text generation, but what’s exciting is that we were able to modify it so that it can work with image generation as well. To do that, we encoded the original CryptoPunk images as sequences of RGB values from their pixels and then used the sequences to finetune the existing GPT-2  model. Finetuning is a popular technique to adapt an existing model to one’s application of interest without going through the long and arduous training process. GPT-2 was then able to generate unique sequences that were similar to the original ones, which were converted back into an image format.
 
 The NFTs were pre-processed and post-processed using the Open-CV and Pillow packages. Other packages which were used were Glob to obtain the dataset of images, Tensorflow and PyTorch for the model infrastructure, Numpy for basic mathematical operations, and Pickle for saving and checkpointing our models during training.
+
+
+
+# Resources
+
+ - https://medium.com/mlearning-ai/generate-nft-cryptopunks-with-gpt-2-generative-pre-training-transformer-4aa405b27bfd
