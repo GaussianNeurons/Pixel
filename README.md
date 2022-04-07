@@ -17,4 +17,6 @@ The NFTs were pre-processed and post-processed using the Open-CV and Pillow pack
 
 # Resources
 
+ - https://openai.com/blog/better-language-models/
+ - https://www.tensorflow.org/tutorials/generative/dcgan
  - https://medium.com/mlearning-ai/generate-nft-cryptopunks-with-gpt-2-generative-pre-training-transformer-4aa405b27bfd
