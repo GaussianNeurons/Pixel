@@ -39,3 +39,4 @@ For anyone who's interested in the deep learning methods that we used for the NF
  - https://www.tensorflow.org/tutorials/generative/dcgan
  - https://medium.com/mlearning-ai/generate-nft-cryptopunks-with-deep-convolutional-generative-adversarial-network-dcgan-db35f0a1adb4
  - https://medium.com/mlearning-ai/generate-nft-cryptopunks-with-gpt-2-generative-pre-training-transformer-4aa405b27bfd
+ - https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/
