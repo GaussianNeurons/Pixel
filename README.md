@@ -48,7 +48,7 @@ Open Terminal and git clone project and navigate to project name.
 	* Add truffle project - Select the ‘Truffle-config.js’ from this project
  * Save Workspace *Make sure in Ganache the RPC Server is : ‘HTTP://127.0.0.1:7545’ and Network ID is : 5777 . Should be the same inside ‘truffle-   config.js’ file under host  and port this is how it is talking to Ganache , our local blockchain
  
- 4. ``` Truffle Migrate ```  (migrates the smart contracts to the network)
+2. ``` Truffle Migrate ```  (migrates the smart contracts to the network)
 To start app in browser navigate to project file and inside another terminal ```npm run start```
 
 Connecting Metamask to Ganache:
