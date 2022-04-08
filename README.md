@@ -32,7 +32,7 @@ The NFTs were pre-processed and post-processed using the Open-CV and Pillow pack
 
 For anyone who's interested in the deep learning methods that we used for the NFT Generation and want to try them out yourself, please check the **NFT_GENERATION** folder where we inlcuded two jupyter notebooks for both of the DCGAN and GPT2 models. 
 
-# Instalation
+# Installation
 
 # Resources
 
