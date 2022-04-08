@@ -34,7 +34,7 @@ For anyone who's interested in the deep learning methods that we used for the NF
 
 # Installation
 
-## Prerequisites
+### Prerequisites
 * Ganche Installed here: https://trufflesuite.com/ganache/ 
 * truffle ``` npm install -g truffle@5.0.5 ```
 * MetaMask extension installed here: https://metamask.io/
