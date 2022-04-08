@@ -3,6 +3,19 @@
 
 **Pixel** is an application designed to promote and gamify financial literacy for the pre-teens and teens. As children learn to save and manage their money, NFTs are unlocked when savings goals are met. Children can browse their NFT collection and swap them on the open marketplace, learning the core fundamentals of market making. Furthermore, as these NFTs are stored in their Ethereum wallet address, they can be imported and used in various Metaverse and decentralized games popular among teens.  Hundreds of pixels make up an NFT, but only **ONE** Pixel empowers teens to start their financial journey.
 
+# Our Inspiration
+3 out of 4 teens lack knowledge and confidence in personal finance, while 73% also want to increase their understanding of money matters. And experts in financial literacy say that hands-on money management experience is key, and particularly savings accounts help children learn about saving and spending. But, how do you get a child interested in finance? How do you make the learning process fun?  There are many financial literacy apps for kids, but they lack connecting to what pre-teens and teens are interested in. Therefore, it makes learning about finance just feel like you’re in the classroom again. Pixel aims to connect finance to things that kids are ACTUALLY interested in – games (especially video games)! Pixel gamifies financial literacy to truly make learning about finance fun – in fact, you may even forget your learning when you’re using Pixel.
+
+*“The beauty of starting with a savings account is, it’s teaching them to make deposits and watch that balance go up,” -Bill Hensley, Senior Director of Education for the National Endowment for Financial Education.*
+
+# What can Pixel do? 
+
+Pixel is an application designed to promote and gamify financial literacy for the pre-teens and teens. As children learn to save and manage their money, NFTs are unlocked when savings goals are met.  
+
+Children can browse their NFT collection and swap them on the open marketplace, learning the core fundamentals of market making. Furthermore, as these NFTs are stored in their Ethereum wallet address, they can be imported and used in various metaverse and decentralized games popular among teens, incentivizing kids to continue to save so they can unlock more great NFTs.    
+
+Pixel integrates with any bank’s mobile digital banking application. Parents can link Pixel to their children’s checking and savings accounts so that children can learn to save while having fun. Parents have full visibility and control over their children’s accounts, and Pixel, to help monitor and encourage their children to save.  
+
 # Technology
 
 ## Pixel APP
