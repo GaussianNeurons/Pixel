@@ -1,0 +1,116 @@
+.App {
+    height: 100%;
+    text-align: center;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  }
+  
+  .App-logo {
+    height: 40vmin;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .add-money {
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .App-link {
+    color: #09d3ac;
+  }
+  
+  h5 { 
+    border-bottom:1px solid black;
+    width:100%;
+    float:left;
+    font-size: 25px;
+    padding-bottom:3px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .soundButton {
+    display: table-cell;
+    color: blue;
+    margin: 4px;
+    padding: 8px;
+    width: 250px;
+    height: 120px !important;
+    border-radius: 8px;
+    border: none !important;
+    float: left !important;
+}
+.volume-slider {
+  bottom:0;
+  height: 8px !important;
+}
+
+  #nav {
+    width: 100%;
+    padding: 20;
+    text-align: center;
+    background-color: #FFE400;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    list-style: none;
+
+    }
+
+#nav li a {
+      display: block;
+      padding: 15px 15px;
+      text-align: center;
+      float: left;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0A0800;
+     }
+
+li {
+    float: left;
+
+     }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10x;
+}
+.column img {
+  margin-top: 12px;
+  margin-right: 12px;
+
+}
+.accountInfo {
+  padding: 0;
+  margin: 0;
+
+}
+
+.buttonStyle {
+  background-color: #ffff;
+  color: #0A0800;
+  box-shadow: '1px 1px #888888';
+
+}
+
+
