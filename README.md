@@ -15,8 +15,9 @@ Built with Python, we used two state-of-the-art (SOTA) deep learning models from
 
 The NFTs were pre-processed and post-processed using the Open-CV and Pillow packages. Other packages which were used were Glob to obtain the dataset of images, Tensorflow and PyTorch for the model infrastructure, Numpy for basic mathematical operations, and Pickle for saving and checkpointing our models during training.
 
-**Experimenting NFT Generation**
-For anyone who's interested in the deep learning methods that we used for the NFT Generation, please check the **NFT_GENERATION** folder where we inlcuded two jupyter notebooks for both of the DCGAN and GPT2 models. 
+**Experimenting NFT Generation:**
+
+For anyone who's interested in the deep learning methods that we used for the NFT Generation and want to try them out yourself, please check the **NFT_GENERATION** folder where we inlcuded two jupyter notebooks for both of the DCGAN and GPT2 models. 
 
 
 # Resources
