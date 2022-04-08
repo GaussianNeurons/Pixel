@@ -34,6 +34,32 @@ For anyone who's interested in the deep learning methods that we used for the NF
 
 # Installation
 
+## Prerequisites
+* Ganche Installed here: https://trufflesuite.com/ganache/ 
+* truffle ``` npm install -g truffle@5.0.5 ```
+* MetaMask extension installed here: https://metamask.io/
+
+### Getting Setup
+Open Terminal and git clone project and navigate to project name.
+1. ``` truffle compile ``` (compiles the smart contract to make sure everything works)
+	* Make sure Ganache is running
+	* Open Ganache
+	* Create New WorkSpace
+	* Add truffle project - Select the ‘Truffle-config.js’ from this project
+ * Save Workspace *Make sure in Ganache the RPC Server is : ‘HTTP://127.0.0.1:7545’ and Network ID is : 5777 . Should be the same inside ‘truffle-   config.js’ file under host  and port this is how it is talking to Ganache , our local blockchain
+ 
+ 4. ``` Truffle Migrate ```  (migrates the smart contracts to the network)
+To start app in browser navigate to project file and inside another terminal ```npm run start```
+
+Connecting Metamask to Ganache:
+ * From Metamask Click on ‘Network’ and create/connect to the same network that Ganache is running on (‘HTTP://127.0.0.1:7545’)
+
+Importing an account from Ganache to Metamask:
+
+ * In Ganache select any account from the accounts list and select ‘Show Keys’
+ * Copy the ‘Private Key’
+ * Click on Metamask then ‘Import Account’, Select Type: ‘Private Key’, Paste private key and select Import
+
 # Resources
 
  - https://openai.com/blog/better-language-models/
