@@ -10,7 +10,6 @@ import tileData from './tileData';
 import './App.css';
 import Container from '@material-ui/core/Container';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -39,6 +38,7 @@ export default function TitlebarGridList() {
   const classes = useStyles();
 
   return (
+    <div style={{width:'30%',height:'50%', border: '2px solid #0A0800', borderRadius:'10px'}}> 
     <div className={classes.root}>
      <h5> SARAH'S NFT LIBRARY </h5>
       <GridList cellHeight={200}  spacing={20} className={classes.gridList}>
@@ -56,5 +56,6 @@ export default function TitlebarGridList() {
         ))}
       </GridList>
     </div>
+  </div>
   );
 }

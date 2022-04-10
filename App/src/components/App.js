@@ -7,8 +7,7 @@ import Navbar from './Navbar'
 import Library from './Library';
 import Reward from './Reward';
 import Profile from './Profile';
-
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './images/lela.png'
 
 
@@ -47,18 +46,18 @@ class App extends Component {
       const startUpDapp = web3.eth.Contract(StartUpDapp.abi, networkData.address)
       this.setState({ startUpDapp });
       console.log("here is the startupDapp TEST",startUpDapp);
-      const startupCount = await startUpDapp.methods.startupCount().call()
+      const mintCount = await startUpDapp.methods.mintCount().call()
       //console.log("amount of startups"+startupCount.toString());
       web3.eth.getGasPrice().then((result) => {
         const gas_price=web3.utils.fromWei(result, 'ether');
         console.log("gas price is ", gas_price)
       })
-      this.setState({ startupCount });
+      this.setState({ mintCount });
       // Load startups
-      for (var i = 1; i <= startupCount; i++) {
-        const startup = await startUpDapp.methods.startups(i).call();
+      for (var i = 1; i <= mintCount; i++) {
+        const mint = await startUpDapp.methods.minting(i).call();
         this.setState({
-          startups: [...this.state.startups, startup]
+          minting: [...this.state.minting, mint]
         });
       }
       this.setState({ loading: false})
@@ -71,25 +70,25 @@ class App extends Component {
     super(props)
     this.state = {
       account: '',
-      startupCount: 0,
-      startups: [],
+      mintCount: 0,
+      minting: [],
       loading: true,
-      //startUpDappContract: {}
     }
-    this.requestFunding = this.requestFunding.bind(this)
+
+    //this.requestFunding = this.requestFunding.bind(this)
     this.mintNFT = this.mintNFT.bind(this)
-    this.fundStartup = this.fundStartup.bind(this)
+   // this.fundStartup = this.fundStartup.bind(this)
   }
 
-  requestFunding(startupDescription, startupAmount) {
-    this.setState({ loading: true });
-    this.state.startUpDapp.methods.requestFunding(startupDescription, startupAmount).send({ from: this.state.account })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
-  }
+  //requestFunding(startupDescription, startupAmount) {
+  //  this.setState({ loading: true });
+  //  this.state.startUpDapp.methods.requestFunding(startupDescription, startupAmount).send({ from: this.state.account })
+  //  .once('receipt', (receipt) => {
+  //    this.setState({ loading: false })
+  //  })
+  //}
 
-  mintNFT(recipient, tokenURI) {
+  mintNFT() {
     this.setState({ loading: true });
     this.state.startUpDapp.methods.mintNFT().send({ from: this.state.account })
     .once('receipt', (receipt) => {
@@ -97,42 +96,52 @@ class App extends Component {
     })
   }
   
-  fundStartup(startupId, startupAmount) {
-    this.setState({ loading: true })
-    this.state.startUpDapp.methods.fundStartup(startupId).send({ from: this.state.account, value: startupAmount })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
-  }
+  //fundStartup(startupId, startupAmount) {
+  //  this.setState({ loading: true })
+  //  this.state.startUpDapp.methods.fundStartup(startupId).send({ from: this.state.account, value: startupAmount })
+  //  .once('receipt', (receipt) => {
+ //     this.setState({ loading: false })
+ //   })
+ // }
+ /*
+  doMain() {
 
+  }
+*/
   render() {
+
     return (
       <div>
-       <div className="container-fluid mt-5">
         <Router>
-            <Navbar />
-            <Routes>
-              <Route path="/Profile" element={<Profile/>} />
-              <Route path="/Main" element={<Main/>} />
-              <Route path="/Library" element={<Library/>} />
-              <Route path="/Reward" element={<Reward/>} />
-            </Routes>
-          </Router>
-         <div className="row">
-           <main role="main" className="col-lg-12 d-flex">
-             {this.state.loading 
+        <Navbar />
+          <Routes >
+            <Route path="/" element={<Profile/>} />
+            <Route path="/Profile" element={<Profile/>} />
+            <Route path="/Main" element={<Main  />} />
+            <Route path="/Library" element={<Library/>} />
+            <Route path="/Reward" element={<Reward minting={this.state.minting} mintNFT={this.mintNFT}/>} />
+
+          </Routes>
+      </Router>        
+      {
+      /*
+       <div className="container-fluid mt-5">
+          <div className="row">
+            <main role="main" className="col-lg-12 d-flex">
+              {this.state.loading 
               ? <div id="loader" className="text-center"><p className="text-center">Loading...</p></div> 
               : <Main
-                startups={this.state.startups}
-                requestFunding={this.requestFunding}
-                mintNFT={this.mintNFT}
-                fundStartup={this.fundStartup} />
+                minting={this.state.minting}
+                mintNFT={this.mintNFT} />
               }
-             
-           </main>
-         </div>
+          
+            </main>
+          </div>    
        </div>
+     */
+      }       
      </div>
+
     );
   }
 }

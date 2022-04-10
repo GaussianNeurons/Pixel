@@ -9,7 +9,7 @@ class Navbar extends Component {
         <div className="navbar navbar-dark fixed-bottom bg-light flex-md-nowrap p-0 shadow">
             <ul id="nav">
                 <li><Link to="/Profile">Profile</Link></li>
-                <li><Link to="/App">Home</Link></li>
+                <li><Link to="/Main">Home</Link></li>
                 <li><Link to="/Reward">Reward</Link></li>
                 <li><Link to="/Library">Library</Link></li>
 

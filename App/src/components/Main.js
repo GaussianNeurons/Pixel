@@ -17,6 +17,8 @@ class Main extends Component {
   render() {
 
     return (
+      <div style={{width:'30%',height:'50%', border: '2px solid #0A0800', borderRadius:'10px'}}> 
+
         <div id="content ">
           <h5> SARAH'S ACCOUNT </h5>
             <div class="accountInfo">
@@ -27,13 +29,18 @@ class Main extends Component {
           &nbsp;
           <div>
             <ProgressBarCon/>
-          </div> &nbsp;&nbsp;
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-            </div>
+          </div>
+          
+          &nbsp;
+          &nbsp;
+          
+          
+        </div>
+      </div>
           );
         }
       }
+    
 
 export default Main;
 

@@ -21,6 +21,8 @@ const ProgressBar = (props) => {
 
 
 
+
+
 export const ProgressBarCon = () => {
     let [percentRange, setProgress] = useState(0);
     let [amount, setAmount] = useState("");
@@ -42,7 +44,7 @@ export const ProgressBarCon = () => {
 
     return (
         <div>
-            <img id="BlurImage" src={require('./images/lela.png')} style={{width: '100%', height: '100%', borderRadius: '10px' ,border: '2px solid #486B87' }}/>
+            <img id="BlurImage" src={require('./images/lela.png')} style={{width: '50%', height: '50%', borderRadius: '10px' ,border: '2px solid #486B87' }}/>
             <p style={{textAlign: 'center'}}>ADD MORE & SEE MORE OF YOUR NFT!</p>
             <div className="add-money">&nbsp;
               <p id="amount">{amount}</p>
@@ -89,8 +91,8 @@ export const ProgressBarCon = () => {
                         setAmount("$" + subVal + " until your next NFT!");   
                     }
                 }>$40 </button>
-                
-                         
+
+                    
                   
             </div>
         </div>

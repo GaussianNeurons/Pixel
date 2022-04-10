@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Profile = () => {
     return (
-        <div> 
+        <div style={{width:'30%',height:'50%',border: '2px solid #0A0800', borderRadius:'10px'}}> 
             <p>&nbsp;</p> 
             <h4
                 style={{
@@ -28,11 +28,6 @@ const Profile = () => {
             <p>&nbsp;</p>
             <p>&nbsp;</p>
 
-
-
-
-
-            
         </div>
    );
 };

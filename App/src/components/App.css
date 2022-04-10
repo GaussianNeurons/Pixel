@@ -66,12 +66,12 @@
 
   #nav {
     width: 100%;
-    padding: 20;
+    padding: 10;
     text-align: center;
     background-color: #FFE400;
     text-decoration: none;
     display: block;
-    font-size: 15px;
+    font-size: 20px;
     list-style: none;
 
     }
